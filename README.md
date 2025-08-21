@@ -1,5 +1,6 @@
 # full-stack-part-0b
 
+# 0.4
 ```mermaid
 sequenceDiagram
     participant browser
@@ -34,5 +35,18 @@ sequenceDiagram
 
     Note right of browser: The browser executes the callback function that renders the notes
 
+
+```
+
+# 0.5
+```mermaid
+sequenceDiagram
+    participant browser
+    participant server
+
+    browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
+    activate server
+    server->>browser: JSON string
+    deactivate server
 
 ```
